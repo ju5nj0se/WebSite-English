@@ -8,35 +8,83 @@
     <link rel="stylesheet" href="./assets/style/output.css">
 
     <!-- Icon page -->
-    <link rel="icon" href="..." type="image/x-icon">
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
     <title> NextSpeak </title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="h-screen">
+<body class="w-screen h-auto">
     <header class="
-        w-screen flex justify-between items-center
-        bg-blue-800 text-white text-xl font-bold
+        flex justify-around items-center
+        bg-blue-800 text-white text-xl font-bold p-2
         ">
-        <div class="flex justify-start items-center w-1/2">
-            <img src="./assets/img/logo.png" alt="Logo" class="rounded-2xl w-15 h-auto m-2 pl-30">
-            <h1 class="text-4xl font-extrabold"> NextSpeak </h1>
+        <div class="flex items-center">
+            <img src="./assets/img/logo.png" alt="Logo" class="rounded-2xl w-15 h-auto m-2 p">
+            <h1 class="text-4xl font-extrabold cursor-pointer"> NextSpeak </h1>
         </div>
-        <div class="flex justify-center items-center w-1/2">
-            <nav>
-                <a href="#recognized-section" class="p-3 ml-3"> Recognized </a>
-                <a href="#independent-section" class="p-3 ml-3"> Independent </a>
-            </nav>
-        </div>
-
+        <nav>
+            <ul class="flex justify-center items-center">
+                <li class="p-3 ml-3 hover:scale-110 transition-transform">
+                    <a href="#recognized-section"> Recognized </a>
+                </li>
+                <li class="p-3 ml-3 hover:scale-110 transition-transform">
+                    <a href="#independent-section" class="p-3 ml-3"> Independent </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-
-
     <main>
         <section id="about-us">
 
         </section>
-        <section id="recognized-section">
+        <section class="flex justify-around w-screen" id="recognized-section">
 
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 h-70 m-2 p-3 text-justify 
+            hover:scale-102 transition-transform 
+            overflow-hidden cursor-pointer
+            bg-linear-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="assets/img/smart-image.png" alt="Imagen Smart" class="rounded-3xl w-screen">
+                <div class="p-3 pb-3">
+                    <p>Smart, one of the institutions more important in the Latinoamerica</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 h-70 m-2 p-3 text-justify 
+            hover:scale-102 transition-transform 
+            overflow-hidden cursor-pointer 
+            bg-linear-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="assets/img/openEnglish-image.jpg" alt="Imagen Smart" class="rounded-3xl w-screen">
+                <div class="p-3 pb-3">
+                    <p>A school of idioms with many years in the market</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 h-70 m-2 p-3 text-justify 
+            hover:scale-102 transition-transform 
+            overflow-hidden cursor-pointer
+            bg-linear-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="assets/img/duolingo-imagen.png" alt="Imagen Smart" class="rounded-3xl w-auto h-40">
+                <div class="p-3 pb-3">
+                    <p>A favorite mobile application for learn english.</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 h-70 m-2 p-3 text-justify 
+            hover:scale-102 transition-transform 
+            overflow-hidden cursor-pointer
+            bg-linear-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="assets/img/british-image.png" alt="Imagen Smart" class="rounded-3xl w-auto h-40">
+                <div class="p-3 pb-3">
+                    <p>A Pretigious institution for learn english</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 h-70 m-2 p-3 text-justify 
+            hover:scale-102 transition-transform 
+            overflow-hidden cursor-pointer
+            bg-linear-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="assets/img/harvard-image.jpg" alt="Imagen Smart" class="rounded-3xl w-auto h-40">
+                <div class="p-3 pb-3">
+                    <p>The university harvard offers english courses for foreigners</p>
+                </div>
+            </div>
         </section>
         <section id="independent-section">
 
