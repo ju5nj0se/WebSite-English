@@ -6,97 +6,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Pure CSS implementation -->
     <link rel="stylesheet" href="./assets/style/output.css">
-
+    <!-- Pure JavaScript implementation -->
+    <script src="./assets/js/index.js" defer></script>
     <!-- Icon page -->
     <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
     <title> NextSpeak </title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="w-screen h-auto">
-    <header class="
-        flex justify-around items-center
-        bg-blue-800 text-white text-xl font-bold p-2
-        ">
-        <div class="flex items-center">
-            <img src="./assets/img/logo.png" alt="Logo" class="rounded-2xl w-15 h-auto m-2 p">
-            <h1 class="text-4xl font-extrabold cursor-pointer"> NextSpeak </h1>
+    <header class="flex justify-between items-center bg-blue-800 text-white text-xl font-bold px-6 py-3 shadow-md">
+        <div class="flex items-center gap-2">
+            <img src="./assets/img/logo.png" alt="Logo" class="rounded-2xl w-12 h-12">
+            <h1 class="text-3xl font-extrabold cursor-pointer"> NextSpeak </h1>
         </div>
-        <nav>
-            <ul class="flex justify-center items-center">
-                <li class="p-3 ml-3 hover:scale-110 transition-transform">
-                    <a href="#recognized-section"> Recognized </a>
-                </li>
-                <li class="p-3 ml-3 hover:scale-110 transition-transform">
-                    <a href="#independent-section" class="p-3 ml-3"> Independent </a>
-                </li>
+        
+        <nav aria-label="Main navigation">
+            <ul class="flex items-center space-x-6">
+            <li>
+                <a href="#recognized-section" class="hover:scale-110 hover:text-gray-300 hover:underline transition-all duration-300 cursor-pointer"> Recognized </a>
+            </li>
+            <li>
+                <a href="#independent-section" class="hover:scale-110 hover:text-gray-300 hover:underline transition-all duration-300 cursor-pointer"> Independent </a>
+            </li>
             </ul>
         </nav>
-    </header>
+        </header>
     <main>
-        <section id="about-us">
+        <section id="about-us" class="m-8 grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+            <div class="p-4 flex justify-center">
+                <img
+                src="./assets/img/trump.jpg"
+                alt="about-us"
+                class="h-80 w-80 rounded-3xl object-cover"
+                />
+            </div>
+            <div class="pl-2 pr-8 max-w-lg">
+                <h2 class="font-sans font-bold text-3xl mb-4 leading-tight text-gray-800 drop-shadow-md">
+                About us
+                </h2>
+                <p class="text-lg leading-relaxed mt-0">
+                NextSpeak is a platform dedicated to connecting students with the best English courses available. We offer a curated selection of top teachers and certified experts to ensure high-quality and effective learning. Our goal is to provide access to practical, up-to-date courses tailored to different levels and needs.
+                </p>
+            </div>
+        </section>
+        <hr class="my-5 border-t-2 border-blue-800 mx-auto">
+        <section class="flex justify-around w-screen flex-wrap" id="recognized-section">
+            <h2 class="w-full text-center text-2xl font-bold mb-4 text-blue-800">Recognized courses</h2>
 
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
+            overflow-hidden cursor-pointer
+            bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="assets/img/smart-image.png" alt="Smart" class="rounded-3xl w-auto h-40">
+                <h3 class="mt-2 text-xl font-semibold">Smart</h3>
+                <p class="italic">Leading in Latin America</p>
+                <div class="p-3 pb-3">
+                    <p>Smart, one of the most important institutions in Latin America.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
+            overflow-hidden cursor-pointer
+            bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="assets/img/openEnglish-image.jpg" alt="Open English" class="rounded-3xl w-auto h-40">
+                <h3 class="mt-2 text-xl font-semibold">Open English</h3>
+                <p class="italic">Online language school</p>
+                <div class="p-3 pb-3">
+                    <p>A renowned language school with many years in the market.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
+            overflow-hidden cursor-pointer
+            bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="assets/img/duolingo-imagen.png" alt="Duolingo" class="rounded-3xl w-auto h-40">
+                <h3 class="mt-2 text-xl font-semibold">Duolingo</h3>
+                <p class="italic">Popular app worldwide</p>
+                <div class="p-3 pb-3">
+                    <p>A favorite mobile application to learn English interactively.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
+            overflow-hidden cursor-pointer
+            bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="assets/img/british-image.png" alt="British Council" class="rounded-3xl w-auto h-40">
+                <h3 class="mt-2 text-xl font-semibold">British Council</h3>
+                <p class="italic">Prestigious institution</p>
+                <div class="p-3 pb-3">
+                    <p>A prestigious institution recognized for teaching English worldwide.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
+            overflow-hidden cursor-pointer
+            bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="assets/img/harvard-image.jpg" alt="Harvard" class="rounded-3xl w-auto h-40">
+                <h3 class="mt-2 text-xl font-semibold">Harvard University</h3>
+                <p class="italic">World-class education</p>
+                <div class="p-3 pb-3">
+                    <p>Harvard offers specialized English courses for foreigners.</p>
+                </div>
+            </div>
         </section>
-        <section class="flex justify-around w-screen" id="recognized-section">
+        <hr class="my-5 border-t-2 border-blue-800 mx-auto">
+        <section class="flex justify-around w-screen flex-wrap" id="independent-section">
+            <h2 class="w-full text-center text-2xl font-bold mb-4 text-blue-800"> Independent courses </h2>
 
-            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 h-70 m-2 p-3 text-justify 
-            hover:scale-102 transition-transform 
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
             overflow-hidden cursor-pointer
-            bg-linear-to-t from-blue-800 to-indigo-500 text-white">
-                <img src="assets/img/smart-image.png" alt="Imagen Smart" class="rounded-3xl w-screen">
+            bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="./assets/img/Alejandro-Salazar.png" alt="Native-Like" class="rounded-3xl w-full h-44 object-cover shadow-lg">
+                <h3 class="mt-2 text-xl font-semibold"> Native-Like </h3>
+                <p class="italic"> by Alejandro Salazar </p>
                 <div class="p-3 pb-3">
-                    <p>Smart, one of the institutions more important in the Latinoamerica</p>
+                    <p>
+                        Learn to speak English naturally and confidently like a native, 
+                        with real idioms and advanced pronunciation techniques.
+                    </p>
                 </div>
             </div>
 
-            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 h-70 m-2 p-3 text-justify 
-            hover:scale-102 transition-transform 
-            overflow-hidden cursor-pointer 
-            bg-linear-to-t from-blue-800 to-indigo-500 text-white">
-                <img src="assets/img/openEnglish-image.jpg" alt="Imagen Smart" class="rounded-3xl w-screen">
-                <div class="p-3 pb-3">
-                    <p>A school of idioms with many years in the market</p>
-                </div>
-            </div>
-            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 h-70 m-2 p-3 text-justify 
-            hover:scale-102 transition-transform 
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
             overflow-hidden cursor-pointer
-            bg-linear-to-t from-blue-800 to-indigo-500 text-white">
-                <img src="assets/img/duolingo-imagen.png" alt="Imagen Smart" class="rounded-3xl w-auto h-40">
+            bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="./assets/img/Camila-Hurtado.png" alt="Speak Like a Pro" class="rounded-3xl w-full h-44 object-cover shadow-lg">
+                <h3 class="mt-2 text-xl font-semibold"> Speak Like a Pro </h3>
+                <p class="italic"> by Camila Hurtado </p>
                 <div class="p-3 pb-3">
-                    <p>A favorite mobile application for learn english.</p>
+                    <p>
+                        Take your English to the next level for professional contexts: 
+                        present, negotiate and captivate with confidence.
+                    </p>
                 </div>
             </div>
-            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 h-70 m-2 p-3 text-justify 
-            hover:scale-102 transition-transform 
-            overflow-hidden cursor-pointer
-            bg-linear-to-t from-blue-800 to-indigo-500 text-white">
-                <img src="assets/img/british-image.png" alt="Imagen Smart" class="rounded-3xl w-auto h-40">
-                <div class="p-3 pb-3">
-                    <p>A Pretigious institution for learn english</p>
-                </div>
-            </div>
-            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 h-70 m-2 p-3 text-justify 
-            hover:scale-102 transition-transform 
-            overflow-hidden cursor-pointer
-            bg-linear-to-t from-blue-800 to-indigo-500 text-white">
-                <img src="assets/img/harvard-image.jpg" alt="Imagen Smart" class="rounded-3xl w-auto h-40">
-                <div class="p-3 pb-3">
-                    <p>The university harvard offers english courses for foreigners</p>
-                </div>
-            </div>
-        </section>
-        <section id="independent-section">
 
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
+            overflow-hidden cursor-pointer
+            bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
+                <img src="./assets/img/Santiago-Paredes.png" alt="Beyond English" class="rounded-3xl w-full h-44 object-cover shadow-lg">
+                <h3 class="mt-2 text-xl font-semibold"> Beyond English </h3>
+                <p class="italic"> by Santiago Paredes </p>
+                <div class="p-3 pb-3">
+                    <p>
+                        Explore English beyond grammar: think critically, interpret cultural nuances and 
+                        reach an advanced level of expression.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer class="">
-        <p> &copy; Esteban Garzón and José Hernandez copyright. </p>
-        <p> Contact: --- </p>
-        <p> Last modification: 07/07/2025 </p>
+    <footer class="bg-blue-800 text-white text-center py-4 mt-12">
+        <p class="text-sm">&copy; Esteban Garzón, José Hernandez and Brandon Arredondo. All rights reserved.</p>
+        <p class="text-xs">Contact: --- | Last update: 07/07/2025</p>
     </footer>
-    <!-- Pure JavaScript implementation -->
-    <script src="./assets/js/index.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
 
 </html>
