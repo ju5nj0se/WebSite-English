@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth w-auto">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="./assets/style/output.css">
     <!-- Pure JavaScript implementation -->
     <script src="./assets/js/index.js" defer></script>
-    <!-- Icon page -->
-    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
     <title> NextSpeak </title>
 </head>
 
-<body class="w-screen h-auto ">
+<body class="overflow-x-hidden">
     <header class="flex justify-between items-center bg-blue-800 text-white text-xl font-bold px-6 py-3 shadow-md">
         <div class="flex items-center gap-2">
             <img src="./assets/img/logo.png" alt="Logo" class="rounded-2xl w-12 h-12">
@@ -23,16 +21,16 @@
         <nav aria-label="Main navigation">
             <ul class="flex items-center space-x-6">
             <li>
-                <a href="#recognized-section" class="hover:scale-110 hover:text-gray-300 hover:underline transition-all duration-300 cursor-pointer"> Recognized </a>
+                <a href="#recognized-section" class="hover:scale-110 hover:text-gray-300 transition-all duration-300 cursor-pointer"> Recognized </a>
             </li>
             <li>
-                <a href="#independent-section" class="hover:scale-110 hover:text-gray-300 hover:underline transition-all duration-300 cursor-pointer"> Independent </a>
+                <a href="#independent-section" class="hover:scale-110 hover:text-gray-300 transition-all duration-300 cursor-pointer"> Independent </a>
             </li>
             </ul>
         </nav>
         </header>
-    <main>
-        <section id="about-us" class="m-8 grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+        <section id="about-us">
+            <main class="m-8 grid grid-cols-1 md:grid-cols-2 items-center gap-4">
             <div class="p-4 flex justify-center">
                 <img
                 src="./assets/img/trump.jpg"
@@ -48,9 +46,11 @@
                 NextSpeak is a platform dedicated to connecting students with the best English courses available. We offer a curated selection of top teachers and certified experts to ensure high-quality and effective learning. Our goal is to provide access to practical, up-to-date courses tailored to different levels and needs.
                 </p>
             </div>
-        </section>
+        </main>
+        </section>
         <hr class="my-5 border-t-2 border-blue-800 mx-auto">
-        <section class="flex justify-around w-screen flex-wrap" id="recognized-section">
+
+        <section class="flex justify-around flex-wrap" id="recognized-section">
             <h2 class="w-full text-center text-2xl font-bold mb-4 text-blue-800">Recognized courses</h2>
 
             <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
@@ -117,13 +117,13 @@
         <section class="flex justify-around w-screen flex-wrap" id="independent-section">
             <h2 class="w-full text-center text-2xl font-bold mb-4 text-blue-800"> Independent courses </h2>
 
-            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/5 m-2 p-3 text-justify
             hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
             overflow-hidden cursor-pointer
             bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
-                <img src="./assets/img/Alejandro-Salazar.png" alt="Native-Like" class="rounded-3xl w-full h-44 object-cover shadow-lg">
+                <img src="./assets/img/image-teacher1.jpg" alt="Native-Like" class="rounded-3xl w-full h-44 object-cover shadow-lg">
                 <h3 class="mt-2 text-xl font-semibold"> Native-Like </h3>
-                <p class="italic"> by Alejandro Salazar </p>
+                <p class="italic">by Alejandra </p>
                 <div class="p-3 pb-3">
                     <p>
                         Learn to speak English naturally and confidently like a native, 
@@ -132,13 +132,13 @@
                 </div>
             </div>
 
-            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/5 m-2 p-3 text-justify
             hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
             overflow-hidden cursor-pointer
             bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
-                <img src="./assets/img/Camila-Hurtado.png" alt="Speak Like a Pro" class="rounded-3xl w-full h-44 object-cover shadow-lg">
+                <img src="./assets/img/image-teacher2.webp" alt="Speak Like a Pro" class="rounded-3xl w-full h-44 object-cover shadow-lg">
                 <h3 class="mt-2 text-xl font-semibold"> Speak Like a Pro </h3>
-                <p class="italic"> by Camila Hurtado </p>
+                <p class="italic"> by Santiago </p>
                 <div class="p-3 pb-3">
                     <p>
                         Take your English to the next level for professional contexts: 
@@ -147,13 +147,13 @@
                 </div>
             </div>
 
-            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/6 m-2 p-3 text-justify
+            <div class="flex flex-col items-center border-2 border-black rounded-4xl w-1/5 m-2 p-3 text-justify
             hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out
             overflow-hidden cursor-pointer
             bg-gradient-to-t from-blue-800 to-indigo-500 text-white">
-                <img src="./assets/img/Santiago-Paredes.png" alt="Beyond English" class="rounded-3xl w-full h-44 object-cover shadow-lg">
+                <img src="./assets/img/image-teacher3.jpg" alt="Beyond English" class="rounded-3xl w-full h-44 object-cover shadow-lg">
                 <h3 class="mt-2 text-xl font-semibold"> Beyond English </h3>
-                <p class="italic"> by Santiago Paredes </p>
+                <p class="italic"> by Lucia </p>
                 <div class="p-3 pb-3">
                     <p>
                         Explore English beyond grammar: think critically, interpret cultural nuances and 
@@ -162,13 +162,11 @@
                 </div>
             </div>
         </section>
-    </main>
+    
     <footer class="bg-blue-800 text-white text-center py-4 mt-12">
-        <p class="text-sm">&copy; Esteban Garzón, José Hernandez and Brandon Arredondo. All rights reserved.</p>
-        <p class="text-xs">Contact: --- | Last update: 07/07/2025</p>
+        <p class="text-2xs">&copy; Esteban Garzón, José Hernandez and Brandon Arredondo. All rights reserved.</p>
+        <p class="text-md">Contact: 1234 | Last update: 07/07/2025</p>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
-
 </html>
